@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 14, 1, 1) 100%);
+    width: 100%;
+    overflow-x:hidden ;
+
+}
+
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px 0;
+}
+
+header .logo{
+    text-transform: uppercase;
+    font-size:29px;
+    font-weight: 800;
+}
+
+header nav{
+    float: right;
+    width: 50%;
+}
+
+header nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+li a.btn{
+    background: orange;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    color: white;
+}
+
+header nav ul li a:not(.btn){
+    display: inline-block;
+    color: white;
+    padding: 0px;
+}
+header nav ul li:not(.active):not(.btn):hover{
+    cursor: pointer;
+    border-bottom: 5px solid orange;
+}
+
+header nav ul li.btn a:hover{
+    background: rgb(170, 113, 8);
+}
+
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: orange;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+.hero{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero--info{
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info h2{
+    font-weight: bold;
+    font-size: 20px;
+    color:orange;
+}
+
+.hero--info h1{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.hero--info p{
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn{
+    color: white;
+    background: orange;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+}
+
+.hero--info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero img{
+    position: absolute;
+    top: -150px;
+    right: 0px;
+}
+
+/* Секция с играми */
+
+.trending{
+    padding-top: 50px;
+}
+
+.trending h3{
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.trending .see-all{
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 9px 30px;
+    float: right;
+    display: block;
+    transition: all 500ms;
+}
+
+.trending .see-all:hover{
+    transform: scale(1.1);
+}
+
+.trending .games{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.trending .games span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.trending .games span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px ;
+}
+
+.big-text{
+    padding: 50px 0;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    width: 800px;
+}
+
+.banner{
+    padding: 80px 0;
+
+}
+.banner h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.banner p{
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+.banner .banner--img{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.banner .points--img{
+    position: relative;
+    float: right;
+    top: -640px;
+    left:-150px;
+    z-index:1;
+}
+
+/*Секция с преимуществами*/
+
+.features{
+    background:url('/img/background-mounts.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.features h3{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 826px;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 187%;
+} 
+
+.features p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 826px;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 187%;
+}
+
+.features .info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .info .block{
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+}
+
+.features .info .block img{
+    margin-bottom: 15px;
+}
+
+.projects{
+    padding: 100px 0;
+}
+
+.projects h3{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 305px;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 187%;
+} 
+
+.projects p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 70px;
+    max-width: 500px;
+    margin-left:auto;
+    margin-right: auto;
+    line-height: 187%;
+}
+
+.projects .image{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+.projects .see-all{
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 9px 30px;
+    float: none;
+    display: block;
+    transition: all 500ms;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.projects .see-all:hover{
+    transform: scale(1.1);
+}
+
+/*Email часть*/
+
+.email{
+    padding-bottom: 120px;
+}
+
+.email h3{
+    margin-top: 60px;
+    font-size: 30px;
+}
+
+.email .block{
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email .block h4{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.email .block p{
+    width: 500px;
+}
+
+.email .block input{
+    background-color: white;
+    outline: none;
+    border:0;
+    border-radius: 10px;
+    width: 380px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    position: relative;
+    right: -90px;
+    z-index: 1;
+    padding-right: 120px;
+}
+
+.email .block input::placeholder{
+    color: #898989;
+}
+
+.email .block button{
+    background: orange;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    color: white;
+    border: 0;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2;
+    left: -10px;
+}
+
+.email .block button:hover{
+    background: rgb(170, 113, 8);
+    cursor: pointer;
+}
+
+
+/*Страница About us*/
+.hero-about .info{
+    width: 500px;
+    padding: 250px 0;
+}
+
+.hero-about .info h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.hero-about .info .btn{
+    color: white;
+    background: orange;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    margin-top: 20px;
+}
+
+.hero-about .info .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero-about{
+    position: relative;
+}
+
+.hero-about img{
+    position: absolute;
+    right: -250px;
+    top: 0;
+    padding-bottom: 50px;
+}
+
+.work{
+    padding: 80px 0;
+}
+
+.work h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work .blocks .block{
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px 35px;
+    background: #1C140F;
+}
+
+.work .blocks .block h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.work .blocks .block .badge{
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple{
+    background: purple;
+}
+
+.work .blocks .block .badge.brown{
+    background: brown;
+}
+
+.work .blocks .block .badge.green{
+    background: green;
+}
+
+.bannergirl{
+    background-color: #1C140F;
+    padding-top: 80px;
+}
+
+.bannergirl .container{
+    display: flex;
+    justify-content: start;
+}
+.textgirl{
+    width: 530px;
+}
+.bannergirl .container .textgirl{
+    margin-left: 80px ;
+    margin-top: 50px;
+}
+
+.bannergirl .container .textgirl p{
+    font-size: 16px;
+    padding-bottom: 20px;
+    line-height: 200%;
+}
+
+.bannergirl .container .textgirl h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    line-height: 160%;
+}
+
+.team{
+    padding: 100px;
+}
+
+.team h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.team .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .blocks .block{
+    width: 24%;
+    height: 253px;
+    border-radius: 20px;
+    background: #1C140F;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    text-align: center; /* Центрирование текста */
+}
+
+
+/*Страни */
+
+/*Страница Contacts*/
+
+.hero-contacts h1{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 33px;
+}
+
+.hero-contacts p{
+    text-align: center;
+}
+
+.hero-contacts img{
+    width: 70%;
+    margin: 80px 15%;
+}
+
+
+.feedback{
+    padding: 70px;
+    background: #1C140F;
+}
+
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px
+}
+
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div{
+    width: 50%;
+}
+
+.feedback form label{
+    color:#4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea{
+    background: #2c2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: white;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line{
+    width: 96%;
+}
+
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button{
+    background: #DC7000;
+    padding: 12px 47px;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    color: white;
+    border: none;
+    float: right;
+} 
+
+.feedback form button:hover{
+    background: #793f01;
+    cursor: pointer;
+} 
+
+/*Footer*/
+
+footer{
+    background-color: black;
+    padding: 50px 0;
+}
+
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo{
+    text-transform: uppercase;
+    font-size:29px;
+    font-weight: 800;
+}
+
+footer .blocks p{
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul{
+    list-style: none;
+}
+
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #6d6d6d;
+}
+
+footer > p {
+    text-align: center;
+}
